@@ -4,18 +4,18 @@ import { Cars } from '../../explore/card_data.jsx';
 import CarCard from '../../explore/car_cards.jsx';
 
 function Explore() {
-  // Pagination - current page state
+  
   const [currentPage, setCurrentPage] = useState(1);
   const carsPerPage = 9;
 
-  // Logic for current cars to display
+
   const indexOfLastCar = currentPage * carsPerPage;
   const indexOfFirstCar = indexOfLastCar - carsPerPage;
   const currentCars = Cars.slice(indexOfFirstCar, indexOfLastCar);
 
-  // Handle page change
+
   const handleNextPage = () => {
-    if (currentPage < Math.ceil(Cars.length / carsPerPage)) {  // Corrected to use Cars
+    if (currentPage < Math.ceil(Cars.length / carsPerPage)) {  
       setCurrentPage(currentPage + 1);
     }
   };

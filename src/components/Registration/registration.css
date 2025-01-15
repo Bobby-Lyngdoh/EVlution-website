@@ -1,0 +1,96 @@
+
+ .register{
+    font-family: 'Arial', sans-serif;
+    background-color:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  form {
+    margin-top: -80px;
+    background-color: rgba(24, 24, 24, 0.9); 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+
+  }
+  
+
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #ea5307;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+
+   .error{
+    font-size: 12px;
+    color: #f44336;
+    margin-top: 5px;
+  }
+  
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .title{
+    color: azure;
+  }
+  
+
+  @media (max-width: 500px) {
+    form {
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  

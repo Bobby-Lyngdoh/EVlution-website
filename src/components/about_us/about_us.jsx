@@ -1,8 +1,8 @@
 import React from 'react';
-// import Navbar from '../Navbar/navbar';
+
 
 import './about.css';
-// import Background from '../Background/background';
+
 
 function About() {
   return (

@@ -10,8 +10,10 @@ function Navbar() {
 
     
       <ul className="nav_menu">
-      <li><Link to="/admin">Admin</Link></li> 
+      
         <li><Link to="/">Home</Link></li> 
+        <li><Link to="/admin">Admin</Link></li> 
+        <li><Link to="/registration">Registration</Link></li>
         <li><Link to="/explore">Explore</Link></li>  
         <li><Link to="/about">About</Link></li> 
         <li><Link to="/contact" className="nav_contact">Contact</Link></li>  

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './car_card.css'; // Importing CSS for styling
+import './car_card.css'; 
 
 const CarCard = ({ car }) => {
   return (

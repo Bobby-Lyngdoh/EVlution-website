@@ -5,12 +5,12 @@ import "./admin.css";
 export default function Admin() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [searchQuery, setSearchQuery] = useState(""); // Search query for admin search bar
-  const [selectedRow, setSelectedRow] = useState(null); // To keep track of the selected row for details
-  const [showSearchBarOnly, setShowSearchBarOnly] = useState(true); // New state to control search bar visibility
+  const [searchQuery, setSearchQuery] = useState(""); 
+  const [selectedRow, setSelectedRow] = useState(null); 
+  const [showSearchBarOnly, setShowSearchBarOnly] = useState(true); 
 
   useEffect(() => {
-    // Fetch data from the API
+ 
     axios
       .get("http://localhost/EVlution/contact_data.php")
       .then((response) => {
@@ -27,7 +27,6 @@ export default function Admin() {
       });
   }, []);
 
-  // Filter the data based on the admin search query
   const filteredData = data.filter((contact) =>
     contact.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     contact.address.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -35,23 +34,22 @@ export default function Admin() {
     contact.message.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // Function to handle search input change (for the admin search bar)
+
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
-    setShowSearchBarOnly(false); // Show the contact list when typing in the search bar
+    setShowSearchBarOnly(false); 
   };
 
-  // Function to handle row click and show details
   const handleRowClick = (contact) => {
     setSelectedRow(contact);
-    setShowSearchBarOnly(false); // Hide search bar when viewing contact details
+    setShowSearchBarOnly(false); 
   };
 
-  // Function to go back to the original interface
+
   const handleBackToInterface = () => {
     setSelectedRow(null);
-    setSearchQuery(""); // Optionally clear the search query
-    setShowSearchBarOnly(true); // Only show the search bar again
+    setSearchQuery(""); 
+    setShowSearchBarOnly(true); 
   };
 
   if (loading) {
@@ -66,7 +64,7 @@ export default function Admin() {
     <div className="admin-container">
       <h1 className="title">Contact Info</h1>
 
-      {/* Admin Search Bar */}
+    
       <div className="admin-search-bar-container">
         <input
           type="text"
@@ -77,9 +75,9 @@ export default function Admin() {
         />
       </div>
 
-      {/* Only show the contact list or contact details if search bar is not the only visible component */}
+    
       {!showSearchBarOnly && !selectedRow ? (
-        // Contact List View
+
         <div className="table-container">
           <table>
             <thead>
@@ -108,7 +106,7 @@ export default function Admin() {
         </div>
       ) : null}
 
-      {/* Displaying contact details if selected */}
+
       {selectedRow && (
         <div className="contact-details">
           <h3>Contact Details</h3>
@@ -138,7 +136,7 @@ export default function Admin() {
               </tr>
             </tbody>
           </table>
-          {/* Button to go back to the original interface */}
+   
           <button
             onClick={handleBackToInterface}
             className="back-to-interface-button"

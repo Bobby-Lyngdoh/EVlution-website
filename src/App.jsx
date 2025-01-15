@@ -5,6 +5,7 @@ import Hero from "./components/Hero/hero.jsx";
 import About from "./components/about_us/about_us.jsx";  
 import { Contact } from './components/contact/Contact.jsx';
 import Admin from './components/admin/admin.jsx';
+import RegistrationForm from './components/Registration/registration.jsx';
  /* import Explore from './components/explore/explore.jsx';
  */
 
@@ -44,6 +45,7 @@ function App() {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/admin' element={<Admin/>} />
      {/*    <Route path='/explore' element={<Explore/>} /> */}
+     <Route path='/registration' element={<RegistrationForm/>} />
 
        
       </Routes>
