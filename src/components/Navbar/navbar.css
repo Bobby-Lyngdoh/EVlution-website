@@ -1,0 +1,56 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    background-color: transparent; 
+    z-index: 1000; 
+}
+
+.nav_logo {
+    font-family: outfit;
+    font-size: 42px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 90px;
+    color: #fff;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: inherit; /* Ensures that links inherit the color of the parent */
+    transition: color 0.3s ease;
+}
+
+.nav_menu a:hover {
+    color: #eaeaea; /* Change color on hover */
+}
+
+/* Prevent active link styles */
+.nav_menu a:active,
+.nav_menu a:focus {
+    outline: none; /* Remove default outline */
+    color: inherit; /* Maintain the same color when active or focused */
+}
+
+.nav_contact {
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #fff; 
+    color: #262626;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.nav_contact:hover {
+    background-color: #eaeaea;
+}

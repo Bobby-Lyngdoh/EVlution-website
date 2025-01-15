@@ -1,0 +1,46 @@
+/* Apply the background image to the entire body */
+body {
+  margin: 0;  /* Remove default margin */
+  padding: 0;  /* Remove default padding */
+  background: url('https://www.reliancegeneral.co.in/siteassets/rgiclassets/images/blogs-images/top-5-fastest-cars-in-the-world2.webp') no-repeat center center/cover;  /* Add your background image URL here */
+  height: 100vh;  /* Make sure the background covers the entire viewport height */
+  font-family: Arial, sans-serif;  /* Font style for the entire page */
+  color: white;  /* Default text color */
+}
+
+/* Container for the About Us section */
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;  /* Ensure the container takes up the full viewport height */
+  padding: 50px;  /* Padding to add space around the content */
+  text-align: center;  /* Center the text */
+}
+
+/* Content section */
+.about-us-content {
+  background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent black background */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;  /* Make the content responsive */
+}
+
+/* Heading styles */
+.about-us-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Paragraph text styles */
+.about-us-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e0e0e0;  /* Light gray for better readability */
+}

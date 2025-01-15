@@ -1,0 +1,130 @@
+/* General Container */
+.admin-container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.0); /* Add slight transparency to the container */
+  border-radius: 8px; /* Optional: to add rounded corners */
+}
+
+/* Title Styling */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(241, 18, 18, 0.7); /* Slight transparency for text color */
+  }
+  
+
+/* Admin Search Bar */
+.admin-search-bar-container {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.admin-search-bar {
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Transparent border */
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+  color: rgba(0, 0, 0, 0.7); /* Slight transparency for text */
+}
+
+/* Toggle Button Container */
+.toggle-button-container {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgba(0, 123, 255, 0.7); /* Transparent button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Table Container */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent table background */
+  border-radius: 5px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Transparent borders */
+  color: black;
+}
+
+.selected {
+  background-color: rgba(173, 216, 230, 0.7); /* Slight transparency for selected row */
+}
+
+.empty-data {
+  text-align: center;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5); /* Transparent text */
+}
+
+/* Contact Details Section */
+.contact-details {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Transparent border */
+  border-radius: 5px;
+  color: black;
+}
+
+/* Contact Details Table */
+.contact-details table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent table background */
+}
+
+.contact-details th, .contact-details td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Transparent borders */
+}
+
+.contact-details th {
+  width: 30%;
+  background-color: rgba(173, 216, 230, 0.7); /* Transparent background */
+}
+
+.contact-details td {
+  width: 70%;
+}
+
+.contact-details h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.7); /* Slight transparency for heading text */
+}
+
+/* Loading State */
+.loading-container {
+  text-align: center;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7); /* Transparent text */
+}
