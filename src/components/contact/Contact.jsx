@@ -131,8 +131,8 @@ export const Contact = () => {
                 <label htmlFor="message">Message</label>
                 <textarea
                     name="message"
-                    cols={10}
-                    rows={5}
+                    cols={5}
+                    rows={3}
                     placeholder="Message"
                     value={values.message}
                     onChange={handleChanges}

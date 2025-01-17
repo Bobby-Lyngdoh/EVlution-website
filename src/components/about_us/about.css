@@ -1,9 +1,8 @@
 
 body {
-  margin: 0;  
-  padding: 0; 
+  
   background: url('https://www.reliancegeneral.co.in/siteassets/rgiclassets/images/blogs-images/top-5-fastest-cars-in-the-world2.webp') no-repeat center center/cover;  /* Add your background image URL here */
-  height: 100vh; 
+ 
   font-family: Arial, sans-serif;  
   color: white;
 }

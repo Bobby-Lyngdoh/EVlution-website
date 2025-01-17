@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './registration.css';
+import axios from 'axios';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -37,7 +38,6 @@ const RegistrationForm = () => {
       confirmPassword: '',
     };
 
-  
     setNotification({ message: '', type: '' });
 
     if (!formData.name) {
@@ -73,16 +73,26 @@ const RegistrationForm = () => {
 
     if (formValid) {
       try {
-        const response = await fetch('http://localhost/EVlution/register_function.php', { 
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData),
+        const response = await axios.post('http://localhost/EVlution/register_function.php', formData, {
+          headers: {
+            'Content-Type': 'application/json',
+          },
         });
 
-        const result = await response.json();
+        const result = response.data;
         setNotification({
           message: result.message,
           type: result.success ? 'success' : 'error',
         });
+
+       
+        setFormData({
+          name: '',
+          email: '',
+          password: '',
+          confirmPassword: '',
+        });
+
       } catch (error) {
         setNotification({
           message: 'An error occurred. Please try again later.',
@@ -99,11 +109,13 @@ const RegistrationForm = () => {
 
   return (
     <div className="register">
-      {notification.message && (
-        <div className={`notification ${notification.type}`}>
-          {notification.message}
-        </div>
-      )}
+      <div >
+        {notification.message && (
+          <div className={`notification ${notification.type}`}>
+            {notification.message}
+          </div>
+        )}
+      </div>
 
       <form onSubmit={handleSubmit}>
         <div>
